@@ -1,49 +1,74 @@
-*{
+* {
     box-sizing: border-box;
-}
-
-body{
+  }
+  
+  body {
     background-color: #34495e;
-    color: aliceblue;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     height: 80vh;
     margin: 0;
     overflow: hidden;
-
-
-}
-h1{
-    margin: 20px 0 0 ;
-}
- 
-.game-container{
+  }
+  
+  h1 {
+    margin: 20px 0 0;
+  }
+  
+  .game-container {
     padding: 20px 30px;
     position: relative;
-    margin: auto; 
+    margin: auto;
     height: 350px;
-    width: 450px; 
-
-}
-
-.figure-container{
+    width: 450px;
+  }
+  
+  .figure-container {
     fill: transparent;
     stroke: #fff;
     stroke-width: 4px;
     stroke-linecap: round;
-}
+  }
   
-.figure-part{
+  .figure-part {
     display: none;
-}
-.wrong-letters-container{
+  }
+  
+  .wrong-letters-container {
     position: absolute;
-    top:20px;
+    top: 20px;
     right: 20px;
     display: flex;
     flex-direction: column;
     text-align: right;
-}
-
+  }
+  
+  .wrong-letters-container p {
+    margin: 0 0 5px;
+  }
+  
+  .wrong-letters-container span {
+    font-size: 24px;
+  }
+  
+  .word{
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      left:50%;
+      transform: translateX(-50%);
+  }
+  .letter{
+      border-bottom: 30x solid #2980b9;
+      display: inline-flex;
+      font-size: 30px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 3px;
+      height: 50px;
+      width: 20px;
+      
+  }
