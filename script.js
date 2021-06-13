@@ -12,7 +12,7 @@ const words = ["application", "programming", "interface", "wizard"];
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
 // console.log(selectedWord);
-const correctLetters = ["w", "i", "z" ,"a", "r", "d"];
+const correctLetters = [];
 const wrongLetters = [];
 
 //fun(show hidden word)
@@ -33,11 +33,19 @@ function displayWord() {
   
 
 	if (innerWord === selectedWord) {
-		finalMessage.innerText = 'Congratulations! You won! 😃';
+		finalMessage.innerText = 'Congratulations! You won! 😃😌';
 		finalMessageRevealWord.innerText = '';
 		popup.style.display = 'flex';
 }
 }
+//display world
+//keydown letter press
+window.addEventListener('keydown', e =>{
+// console.log(e.keyCode);
+if (e.keyCode >=65 && e.keyCode <=90){
+  console.log(123);
+}
+});
 
 
 displayWord();
