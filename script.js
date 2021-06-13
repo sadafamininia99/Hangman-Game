@@ -16,6 +16,7 @@ const correctLetters = [];
 const wrongLetters = [];
 
 //fun(show hidden word)
+//display world
 function displayWord() {
   wordEl.innerHTML = `
     ${selectedWord
@@ -38,8 +39,9 @@ function displayWord() {
 		popup.style.display = 'flex';
 }
 }
-//display world
+
 //keydown letter press
+ 
 window.addEventListener('keydown', e =>{
 // console.log(e.keyCode);
 if (e.keyCode >=65 && e.keyCode <=90){
